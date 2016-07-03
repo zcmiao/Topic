@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to **Cost-effective Online Trending Topic Detection and Popularity Prediction for Microblogging** System.
+Welcome to the system of **Cost-effective Online Trending Topic Detection and Popularity Prediction for Microblogging**.
 
 # Source Code
 Please read the readme file in `src` directory for more details.
