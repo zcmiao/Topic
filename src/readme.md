@@ -6,7 +6,7 @@ You have to install the following packages to run the code.
 - Numpy
 - Scipy
 - Gensim
-- Networkrx
+- Networkx
 - PyMySQL
 
 For Chinese words segmentaton, you also need:
