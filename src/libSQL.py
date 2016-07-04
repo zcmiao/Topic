@@ -54,7 +54,7 @@ def markUser(userList, method='test', overwrite=False):
 
     with conn:
         cur.execute("select * from information_schema.COLUMNS where TABLE_SCHEMA='%s' "\
-        "and TABLE_NAME='uid_weibo_info' and COLUMN_NAME='method_%s'" %(DATABSE, method))
+        "and TABLE_NAME='uid_weibo_info' and COLUMN_NAME='method_%s'" %(DATABASE, method))
         existFlag=False
         if cur.fetchone():
             existFlag=True

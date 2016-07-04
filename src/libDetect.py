@@ -771,10 +771,10 @@ def online_detect_v3(corpus_filtered, metas_filtered, combine_index, dictionary,
     count_not_gt_event=0
     events_result_index=0
     for event_count, event_result, meta_result in events_result:
-        print 'combined eventsize=%d' %event_count
-        for word in event_result:
-            print word,
-        print ''
+        # print 'combined eventsize=%d' %event_count
+        # for word in event_result:
+        #     print word,
+        # print ''
         
         if event_count>=detectParam.precDetectedCountThres:
             query_vec= dictionary.doc2bow(list(event_result))

@@ -312,7 +312,7 @@ if __name__ == '__main__':
                 dictionary=dictionary.load('%s-Nh%s-lasts%s.dict' %(helper.timestamp2str(running_time),Nh,Nl))
                 print 'load dictionary size: %s' %len(dictionary)
             
-            dictionary, corpus_gt, tfidf_gt, index_gt, util_gt = ti.loadEventGT(dictionary, timePoint=running_time, step=step, gt_Nh=gt_Nh, gt_Nd=gt_Nd, jobID=jobID, inputEvent= eventlist_gt, detectParam= DParam, verbose=True)
+            dictionary, corpus_gt, tfidf_gt, index_gt, util_gt = ti.loadEventGT(dictionary, timePoint=running_time, step=step, gt_Nh=gt_Nh, gt_Nd=gt_Nd, jobID=jobID, inputEvent= eventlist_gt, detectParam= DParam)
 
             selected= de.selectUserHeu(c=args.c, k=args.k, userInvolveList=userInvolveList_init, runFlags=runFlags, dictionary=dictionary, corpus_gt=corpus_gt, tfidf_gt=tfidf_gt, index_gt=index_gt, util_gt=util_gt, running_time=running_time, step=step, Nh=Nh, Nl=Nl, jobID=jobID, eventlist=eventlist_gt, selectSize=args.selSize, detectParam=DParam, predictParam=PParam)
             db.markUser(selected, method='%s_%s_c%s_k%s_s%s_size%s' %(args.jobID, args.selType, int(args.c), args.k, args.step, args.selSize), overwrite=True)
