@@ -6,7 +6,7 @@
 - No commercial usage.
 
 ###topic_info
-- Weibo topic title, id, time, etc.- )
+- Weibo topic title, id, time, etc.
 
 ###micropost_route_info
 - Weibo micropost posting and reposting relation.
